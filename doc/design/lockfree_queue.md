@@ -82,7 +82,7 @@ Constraint: we can never push more than n elements (and our use case does not re
 Pop reads the value at the index of head and returns it if the cycle matches Heads cycle and a CAS to increase head by 1 succeeds.
 
 ```
-[ (c,?), (c,y), (c,x), (c-1,?) ]   H=(c,1)     T=(c,3)
+[ (c,?), (c,x), (c,y), (c-1,?) ]   H=(c,1)     T=(c,3)
 ```
 
 pop returns y
